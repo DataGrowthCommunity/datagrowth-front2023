@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DgcInformationCommunityComponent } from './dgc-information-community.component';
 
 describe('DgcInformationCommunityComponent', () => {

@@ -1,0 +1,47 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: -webkit-linear-gradient(45deg, rgb(3, 7, 91), rgba(10,84,116,1), rgb(159, 199, 210));
+
+    ::ng-deep a.btn.btn-primary {
+        height: 48px;
+        width: 312px;
+    }
+
+    ::ng-deep a {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+    }
+
+    ::ng-deep {
+        h1 {
+            width: 492px;
+            font-size: 70px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        p {
+            width: 426px;
+            left: 101px;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    } 
+}
