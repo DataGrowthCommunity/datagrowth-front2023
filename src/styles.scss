@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+/*Importing Fonts*/
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  src: url(./assets/fonts/Rubik-Regular.ttf);
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+$color-1: #10103D;
+$color-2: #EFEFEF;
+$color-success: #009999;
+$color-error: #C31313;
+$color-back-1: #10103D;
+$color-back-2: #F72585;
+$color-back-3: #EFEFEF;
+$color-input: #10103D;
+$color-input-p: #8C9FC6;
+$font-h-1: 70px;
+$font-h-2: 48px;
+$font-h-3: 30px;
+$font-p-4: 22px;
+$font-p-sm-5: 17px;
+$font-p-footer-6: 20px;
+$border-radius-button-1: 1.25rem;
+$border-radius-button-2: 0.625rem;
+$border-radius-card-1: 0.625rem;
+$border-radius-card-2: 1.25rem;
+$border-radius-card-3: 0.938rem;
+$shadow: 0px 0px 15px 0px #0000004D;
+$animation: 500ms;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-back-3;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-size: $font-p-4;
+}
+
