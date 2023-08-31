@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dgc-footer.component.scss']
 })
 export class DgcFooterComponent {
-
+  year = new Date().getFullYear();
 }

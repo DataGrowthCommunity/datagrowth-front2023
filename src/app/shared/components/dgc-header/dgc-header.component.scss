@@ -1,0 +1,46 @@
+@import 'src/styles.scss';
+
+.header {
+  background-color: $color-back-3;
+  max-height: 75px;
+  width: 100%;
+  padding: 5px 2rem;
+  position: sticky;
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .header__logo li {
+      cursor: pointer;
+    }
+    .header__menu {
+      display: flex;
+      align-items: center;
+      li.header__menu-item {
+        margin: 0px 15px;
+        a {
+          text-decoration: none;
+          color: $color-1;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .header__menu-link--button {
+          border: 2px solid $color-1;
+          border-radius: $border-radius-button-1;
+          padding: 8px 20px;
+          transition: all $animation ease;
+          &:hover {
+           background-color: $color-1;
+           color: $color-2;
+          }
+        }
+
+      }
+    }
+  }
+}
