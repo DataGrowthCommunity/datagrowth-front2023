@@ -8,12 +8,12 @@
 @import 'bootstrap/scss/bootstrap';
 
 $color-1: #10103D;
-$color-2: #EFEFEF;
+$color-2: #FFFFFF;
 $color-success: #009999;
 $color-error: #C31313;
 $color-back-1: #10103D;
 $color-back-2: #F72585;
-$color-back-3: #EFEFEF;
+$color-back-3: #FFFFFF;
 $color-input: #10103D;
 $color-input-p: #8C9FC6;
 $font-h-1: 70px;
@@ -39,3 +39,6 @@ html, body {
   font-size: $font-p-4;
 }
 
+.container {
+  max-width: 1350px;
+}
