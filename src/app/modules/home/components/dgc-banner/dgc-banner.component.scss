@@ -1,0 +1,56 @@
+@import 'src/styles.scss';
+
+.banner {
+    background: -webkit-linear-gradient(45deg, $color-1, $color-success, $color-input-p);
+    width: 100%;
+
+    .banner__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .banner__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1.banner__title {
+                color: $color-2;
+                font-size: $font-h-1;
+                font-weight: 600;
+                width: 492px;
+            }
+
+            p {
+                color: $color-2;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: left;
+                width: 420px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $color-2;
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            .banner__menu-link--button {
+                background: $color-success;
+                border: 2px solid $color-success;
+                border-radius: $border-radius-button-1;
+                padding: 11px 26px 11px 26px;
+                transition: all $animation ease;
+
+                &:hover {
+                    background-color: $color-2;
+                    color: $color-1;
+                }
+            }
+        }
+    }
+}

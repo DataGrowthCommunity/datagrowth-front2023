@@ -5,8 +5,6 @@ import { DgcHeaderComponent } from './components/dgc-header/dgc-header.component
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
-
 @NgModule({
   declarations: [
     DgcFooterComponent,

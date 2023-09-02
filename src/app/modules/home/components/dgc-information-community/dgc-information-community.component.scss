@@ -1,0 +1,48 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    padding: 50px 50px;
+
+    ::ng-deep {
+        h2 {
+            Width: 1031px;
+            font-size: 48px;
+            font-weight: 600;   
+            color: #10103D;
+        }
+
+        p {
+            width: 1106px;
+            color: #10103D;
+        }
+    }
+
+    .btns-information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .btn-info {
+        border-radius: 30px;
+        border-color:#10103D;
+        background: #fff !important;
+        width: 240px;
+        height: 40px;
+        color: #10103D;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .btn-info:hover {
+        color: #fff;
+        background: #10103D !important;
+    }
+     
+}
