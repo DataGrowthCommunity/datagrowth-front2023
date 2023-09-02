@@ -5,6 +5,7 @@
   .footer__container {
     background-color: $color-back-3;
     min-height: 110px;
+    padding: 2rem;
     .footer__block {
       display: flex;
       align-items: center;
@@ -29,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background-color: $color-back-1;
     height: 50px;
     color: $color-2;
