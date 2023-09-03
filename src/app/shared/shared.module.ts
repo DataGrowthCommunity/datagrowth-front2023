@@ -4,11 +4,13 @@ import { DgcFooterComponent } from './components/dgc-footer/dgc-footer.component
 import { DgcHeaderComponent } from './components/dgc-header/dgc-header.component';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DgcInformationCommunityComponent } from './components/dgc-information-community/dgc-information-community.component';
 
 @NgModule({
   declarations: [
     DgcFooterComponent,
-    DgcHeaderComponent
+    DgcHeaderComponent,
+    DgcInformationCommunityComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   exports: [
     DgcFooterComponent,
-    DgcHeaderComponent
+    DgcHeaderComponent,
+    DgcInformationCommunityComponent
   ]
 })
 export class SharedModule { }

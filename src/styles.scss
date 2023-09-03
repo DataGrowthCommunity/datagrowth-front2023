@@ -48,6 +48,9 @@ h2 {
 h3 {
   $font-h-3: 30px;
 }
+h1, h2, h3, p, a {
+  letter-spacing: 1px;
+}
 
 section {
   padding-top: 2rem;
