@@ -1,33 +1,48 @@
 @import 'src/styles.scss';
 
-.banner {
-    background: -webkit-linear-gradient(45deg, $color-1, $color-success, $color-input-p);
+.follow {
+    background: url(/assets/images/conferencia.png), linear-gradient(45deg, #0b0b81, #065959, #10103d, #0e58f1);
+    background-size: cover;
+    background-blend-mode: multiply; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
+    height: 481px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    .banner__container {
+    .follow__container {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .banner__block {
+        .follow__block {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
-            h1.banner__title {
+            h2.follow__title {
+                width: 878px;
                 color: $color-2;
-                font-size: $font-h-1;
+                font-size: $font-h-2;
                 font-weight: 600;
-                width: 492px;
+                line-height: 57px;
+                letter-spacing: 0em;
             }
 
             p {
+                width: 878px;
                 color: $color-2;
                 font-size: 22px;
                 font-weight: 400;
                 line-height: 26px;
                 letter-spacing: 0em;
-                width: 492px;
+                margin-top: 1rem !important;
+                margin-bottom: 2rem !important;
             }
 
             a {
@@ -37,10 +52,9 @@
                 font-weight: 400;
             }
 
-            .banner__link--button {
-                background: $color-success;
-                border: 2px solid $color-success;
-                border-radius: $border-radius-button-2;
+            .follow__link--button {
+                background: $color-back-2;
+                border-radius: $border-radius-button-1;
                 padding: 11px 26px 11px 26px;
                 transition: all $animation ease;
                 width: 312px;

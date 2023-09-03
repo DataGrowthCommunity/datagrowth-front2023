@@ -1,0 +1,70 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 746px;
+    background: #fff;
+
+    .dgc-impact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ::ng-deep {
+        h2 {
+            Width: 1031px;
+            font-size: 48px;
+            font-weight: 600;
+            color: #10103D;
+        }
+
+        p {
+            width: 939px;
+            color: #10103D;
+        }
+    }
+
+    .btn-contact {
+        background: #F72585;
+        border-radius: 30px;
+        width: 313px;
+        color: #fff;
+    }
+
+    .card-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        box-shadow: -1px -2px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        border-radius: 15px;
+        height: 224.61px;
+    }
+
+    .text {
+        color: #10103D;
+    }
+
+    ::ng-deep {
+        .col-lg-4 {
+            flex: 0 0 auto;
+            width: 16.1%;
+        }
+
+        h4 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 57px;
+        }
+    }
+
+}

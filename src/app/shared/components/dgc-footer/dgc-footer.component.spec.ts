@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DgcFooterComponent } from './dgc-footer.component';
 
 describe('DgcFooterComponent', () => {
