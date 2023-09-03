@@ -2,10 +2,13 @@
 
 .header {
   background-color: $color-back-3;
-  max-height: 75px;
+  min-height: 70px;
   width: 100%;
   padding: 5px 2rem;
   position: sticky;
+  top: 0;
+  z-index: 99999;
+  box-shadow: 0px 0px 8px 0px #00000040;
   .header__nav {
     display: flex;
     align-items: center;
@@ -39,7 +42,43 @@
            color: $color-2;
           }
         }
+        .header__menu-item--menuBar {
+          border: none;
+          background-color: $color-back-3;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
 
+.header__offcanvas--header {
+  padding: 5px 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__menu-item--menuClose {
+    border: none;
+    background-color: $color-back-3;
+  }
+}
+
+.header__offcanvas--body {
+  background-color: $color-back-1;
+  color: $color-2;
+  height: 100%;
+  padding: 1rem 2rem;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      border-bottom: 2px solid $color-2;
+      margin: 1rem 0;
+      padding-bottom: 0.8rem;
+      a {
+        text-decoration: none;
+        color: $color-2;
       }
     }
   }

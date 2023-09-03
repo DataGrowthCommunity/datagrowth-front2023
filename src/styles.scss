@@ -5,7 +5,7 @@
   src: url(./assets/fonts/Rubik-Regular.ttf);
 }
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/bootstrap';
 
 $color-1: #10103D;
 $color-2: #FFFFFF;
@@ -37,6 +37,24 @@ html, body {
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
   font-size: $font-p-4;
+}
+
+h1 {
+  $font-h-1: 70px;
+}
+h2 {
+  $font-h-2: 48px;
+}
+h3 {
+  $font-h-3: 30px;
+}
+h1, h2, h3, p, a {
+  letter-spacing: 1px;
+}
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .container {
