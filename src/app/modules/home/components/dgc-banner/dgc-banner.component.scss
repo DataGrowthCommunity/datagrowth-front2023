@@ -12,7 +12,6 @@
         .banner__block {
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
 
             h1.banner__title {
@@ -28,8 +27,7 @@
                 font-weight: 400;
                 line-height: 26px;
                 letter-spacing: 0em;
-                text-align: left;
-                width: 420px;
+                width: 492px;
             }
 
             a {
@@ -39,12 +37,13 @@
                 font-weight: 400;
             }
 
-            .banner__menu-link--button {
+            .banner__link--button {
                 background: $color-success;
                 border: 2px solid $color-success;
-                border-radius: $border-radius-button-1;
+                border-radius: $border-radius-button-2;
                 padding: 11px 26px 11px 26px;
                 transition: all $animation ease;
+                width: 312px;
 
                 &:hover {
                     background-color: $color-2;
