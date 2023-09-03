@@ -1,6 +1,6 @@
 <header class="header">
   <nav class="header__nav">
-      <ul class="header__logo">
+      <ul [routerLink]="['/']" class="header__logo">
         <li>
           <svg width="140" height="52" viewBox="0 0 140 52" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect width="140" height="52" fill="url(#pattern0)"/>
@@ -54,7 +54,12 @@
           <div class="header__offcanvas--body">
             <ul>
               <li>
-                <a [routerLink]="['/grupo-estudio']">
+                <a (click)="goToRoute('/')">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a (click)="goToRoute('/grupo-estudio')">
                   Capacitaciones
                 </a>
               </li>
