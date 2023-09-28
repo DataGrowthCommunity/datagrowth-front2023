@@ -40,13 +40,13 @@ html, body {
 }
 
 h1 {
-  $font-h-1: 70px;
+  font-size: $font-h-1;
 }
 h2 {
-  $font-h-2: 48px;
+  font-size: $font-h-2;
 }
 h3 {
-  $font-h-3: 30px;
+  font-size: $font-h-3;
 }
 h1, h2, h3, p, a {
   letter-spacing: 1px;

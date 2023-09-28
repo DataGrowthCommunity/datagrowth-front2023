@@ -27,8 +27,9 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 45px;
 
-        .testimonial__block {
+        .testimonial__blocks--cards {
             width: 280px;
+            min-width: 280px;
             display: flex;
             flex-direction: column;
             background: $color-2;
@@ -38,14 +39,14 @@
             position: relative;
         }
 
-        h5.testimonial__name {
+        h5.testimonial__blocks__name {
             color: $color-1;
             font-size: 18px;
             font-weight: 600;
             margin: 0;
         }
 
-        p.testimonial__message {
+        p.testimonial__blocks__message {
             color: $color-1;
             font-size: 17px;
             font-weight: 400;
