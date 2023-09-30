@@ -13,10 +13,11 @@
           </svg>
         </div>
         <div class="col mb-2 footer__block">
-          <a [routerLink]="['/grupo-estudio']" class="text-center footer__title">Capacitaciones</a>
+          <a [routerLink]="['/grupo-estudio']" class="footer__title mb-2">Capacitaciones</a>
+          <a href="https://chat.whatsapp.com/E5bR74zaC4h94eOGZjswCp" class="footer__title" target="_blank">&Uacute;nete a la comunidad</a>
         </div>
         <div class="col mb-2 footer__block">
-          <a href="https://chat.whatsapp.com/E5bR74zaC4h94eOGZjswCp" class="text-center footer__title" target="_blank">&Uacute;nete a la comunidad</a>
+          <a [routerLink]="['/grupo-estudio']" class="footer__title">T&eacute;rminos y condiciones</a>
         </div>
         <div class="col mb-2 footer__block">
           <ul class="footer__block-networks">
@@ -44,5 +45,5 @@
         </div>
     </div>
   </div>
-  <div class="row m-0 footer__copyright">Data Growth {{ year }} | Todos los derechos reservados.</div>
+  <div class="row m-0 footer__copyright">© {{ year }} Data Growth. Todos los Derechos Reservados.</div>
 </footer>

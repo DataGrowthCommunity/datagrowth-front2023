@@ -7,15 +7,19 @@
 /* Importing Bootstrap SCSS file. */
 // @import 'bootstrap/scss/bootstrap';
 
-$color-1: #10103D;
-$color-2: #FFFFFF;
+$color-1: #FFFFFF;
+$color-2: #FFD60A;
+$color-3: #00CED8;
+$color-4: #F72585;
 $color-success: #009999;
 $color-error: #C31313;
-$color-back-1: #10103D;
-$color-back-2: #F72585;
-$color-back-3: #FFFFFF;
+$color-back-1: #141021;
+$color-back-2: #00CED8;
+$color-back-3: rgba(58, 56, 66, 0.96);
+$color-back-4: rgba(58, 56, 66, 1);
 $color-input: #10103D;
 $color-input-p: #8C9FC6;
+$color-input-p-2: #141021;
 $font-h-1: 70px;
 $font-h-2: 48px;
 $font-h-3: 30px;
@@ -24,16 +28,17 @@ $font-p-sm-5: 17px;
 $font-p-footer-6: 20px;
 $border-radius-button-1: 1.25rem;
 $border-radius-button-2: 0.625rem;
-$border-radius-card-1: 0.625rem;
+$border-radius-card-1: 20px;
 $border-radius-card-2: 1.25rem;
 $border-radius-card-3: 0.938rem;
 $shadow: 0px 0px 15px 0px #0000004D;
 $animation: 500ms;
 
+
 html, body {
   margin: 0;
   padding: 0;
-  background-color: $color-back-3;
+  background-color: $color-back-1;
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
   font-size: $font-p-4;

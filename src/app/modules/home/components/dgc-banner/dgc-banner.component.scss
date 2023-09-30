@@ -5,21 +5,16 @@
     width: 100%;
 
     .banner__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
         .banner__block {
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
 
             h1.banner__title {
                 color: $color-2;
                 font-size: $font-h-1;
                 font-weight: 600;
-                width: 492px;
             }
 
             p {
@@ -29,7 +24,6 @@
                 line-height: 26px;
                 letter-spacing: 0em;
                 text-align: left;
-                width: 420px;
             }
 
             a {
@@ -37,6 +31,7 @@
                 color: $color-2;
                 font-size: 22px;
                 font-weight: 400;
+                text-align: left;
             }
 
             .banner__menu-link--button {
