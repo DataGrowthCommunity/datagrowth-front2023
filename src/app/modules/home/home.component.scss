@@ -1,0 +1,11 @@
+.content__back-1 {
+  position: relative;
+  .elipse__one {
+    position: absolute;
+    width: 700px;
+    height: 900px;
+    background: radial-gradient(300px 450px, #0F3642, #14102105);
+    left: 0;
+    transform: translate(-15rem, 15rem);
+  }
+}
