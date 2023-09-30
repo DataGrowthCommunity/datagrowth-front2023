@@ -2,8 +2,8 @@
 
 .footer {
   width: 100%;
+  background: linear-gradient(76deg, #0F4756, #010101, #000207, #110E1D);
   .footer__container {
-    background-color: $color-back-3;
     min-height: 110px;
     padding: 2rem;
     .footer__block {
@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: $color-back-1;
+    background: linear-gradient(76deg, #0F4756, #010101, #000207, #110E1D);
     height: 50px;
     color: $color-2;
     font-size: 15px;

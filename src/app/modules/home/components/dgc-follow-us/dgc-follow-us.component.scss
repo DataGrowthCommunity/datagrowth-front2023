@@ -1,66 +1,65 @@
 @import 'src/styles.scss';
 
 .follow {
-    background: url(/assets/images/conferencia.png), linear-gradient(45deg, #0b0b81, #065959, #10103d, #0e58f1);
-    background-size: cover;
-    background-blend-mode: multiply; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    height: 481px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: linear-gradient(76deg, #0F4756, #010101, #000207, #110E1D);
 
     .follow__container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
 
         .follow__block {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: end;
+        }
 
-            h2.follow__title {
-                width: 878px;
-                color: $color-2;
-                font-size: $font-h-2;
-                font-weight: 600;
-                line-height: 57px;
-            }
+        .follow__block--two {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
 
-            p {
-                width: 878px;
-                color: $color-2;
-                font-size: 22px;
-                font-weight: 400;
-                line-height: 26px;
-                margin-top: 1rem !important;
-                margin-bottom: 2rem !important;
-            }
+        .follow__title {
+            width: 400px;
+            color: $color-2;
+            font-size: $font-h-2;
+            font-weight: 600;
+            line-height: 57px;
+        }
 
-            a {
-                text-decoration: none;
-                color: $color-2;
-                font-size: 22px;
-                font-weight: 400;
-            }
+        h2 span {
+            color: $color-warning;
+            font-size: $font-h-1;
+        }
 
-            .follow__link--button {
-                background: $color-back-2;
-                border-radius: $border-radius-button-1;
-                padding: 11px 26px 11px 26px;
-                transition: all $animation ease;
-                width: 312px;
+        .follow__message {
+            color: $color-2;
+            line-height: 32px;
+            width: 400px;
+        }
 
-                &:hover {
-                    background-color: $color-2;
-                    color: $color-1;
-                }
+        a {
+            text-decoration: none;
+            color: $color-2;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .follow__link--button {
+            text-decoration: none;
+            background: $color-success;
+            border-radius: 0.438rem 0 0.438rem 0.438rem;
+            padding: 4px;
+            transition: all $animation ease;
+            width: 302px;
+            height: 40px;
+
+            &:hover {
+                background-color: $color-2;
+                color: $color-1;
             }
         }
     }

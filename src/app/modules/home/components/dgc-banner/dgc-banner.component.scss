@@ -1,8 +1,12 @@
 @import 'src/styles.scss';
 
 .banner {
-    background: -webkit-linear-gradient(45deg, $color-1, $color-success, $color-input-p);
-    width: 100%;
+    // background: -webkit-linear-gradient(45deg, #10323F, #131123, $color-input-p);
+    // background: url(/assets/images/banner.png), linear-gradient(67deg, #0f3642, #010101, #000207, rgba(0, 2, 8, 0.2509803922));
+    background: url(/assets/images/banner.png), linear-gradient(54deg, rgb(0 153 153 / 30%), #0f3642, #131525a8, rgba(0, 2, 8, 0.2));
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 734px;
 
     .banner__container {
 
@@ -11,28 +15,30 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 15px;
+            padding: 10% 15%;
 
-            h1.banner__title {
+            .banner__title {
                 color: $color-2;
                 font-size: $font-h-1;
                 font-weight: 600;
+                width: 492px;
             }
 
-            p.banner__object {
+            h1 span {
+                color: $color-warning;
+            }
+
+            .banner__object {
                 color: $color-2;
-                font-size: $font-p-4;
-                font-weight: 400;
-                line-height: 26px;
-                letter-spacing: 0em;
+                width: 439px;
             }
             
-
             a {
                 text-decoration: none;
-                color: $color-2;
+                color: $color-input-p-2;
                 font-size: 22px;
                 font-weight: 400;
+                text-align: center;
             }
 
             img {
@@ -41,11 +47,11 @@
 
             .banner__link--button {
                 background: $color-success;
-                border: 2px solid $color-success;
-                border-radius: $border-radius-button-2;
-                padding: 11px 19px;
+                border-radius: $border-radius-button-2 0 $border-radius-button-2 $border-radius-button-2;
+                padding: 4px;
                 transition: all $animation ease;
-                width: 312px;
+                width: 302px;
+                height: 40px;
 
                 &:hover {
                     background-color: $color-2;

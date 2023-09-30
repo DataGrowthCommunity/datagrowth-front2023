@@ -1,7 +1,7 @@
 @import 'src/styles.scss';
 
 .testimonial {
-    background: -webkit-linear-gradient(45deg, $color-1, $color-success, $color-input-p);
+    background: radial-gradient(circle at top left, #0F4756, #010101, #000207, #110E1D, #0f4756);
     width: 100%;
 
     .testimonial__container {
@@ -16,8 +16,13 @@
             h2 {
                 color: $color-2;
                 font-size: $font-h-2;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 57px;
+            }
+
+            h2 span {
+                color: $color-warning;
+                font-size: $font-h-1;
             }
         }
     }
@@ -32,7 +37,7 @@
             min-width: 280px;
             display: flex;
             flex-direction: column;
-            background: $color-2;
+            background: $color-back-8;
             border-radius: $border-radius-card-1;
             box-shadow: $shadow;
             padding: 1rem;
@@ -40,14 +45,14 @@
         }
 
         h5.testimonial__blocks__name {
-            color: $color-1;
+            color: $color-2;
             font-size: 18px;
             font-weight: 600;
             margin: 0;
         }
 
         p.testimonial__blocks__message {
-            color: $color-1;
+            color: $color-2;
             font-size: 17px;
             font-weight: 400;
             line-height: 20px;
@@ -55,10 +60,11 @@
 
         span.testimonial__groupStudy {
             font-size: 12px;
+            color: $color-2;
         }
 
         a {
-            color: $color-input-p;
+            color: $color-2;
             font-size: 17px;
             font-weight: 400;
             font-size: 15px;
@@ -72,7 +78,7 @@
             margin-top: 100%;
             width: 100px;
             left: 147px;
-            border: 10px solid #fff;
+            border: 10px solid $color-2;
         }
     }
 
@@ -88,12 +94,13 @@
     
         .testimonial__link--button {
             text-decoration: none;
-            background: $color-back-2;
-            border-radius: $border-radius-button-1;
-            padding: 11px 26px 11px 26px;
+            background: $color-success;
+            border-radius: 0.438rem  0.438rem  0  0.438rem;
+            padding: 4px;
             transition: all $animation ease;
-            width: 312px;
-    
+            width: 302px;
+            height: 40px;
+     
             &:hover {
                 background-color: $color-2;
                 color: $color-1;
