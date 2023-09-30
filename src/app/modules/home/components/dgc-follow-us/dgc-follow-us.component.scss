@@ -1,37 +1,66 @@
-:host {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 481px;
-    background: url(/assets/images/conferencia.png), linear-gradient(45deg, rgb(3, 7, 91), rgba(10,84,116,1), rgb(159, 199, 210) );
-    background-size: cover;
-    background-blend-mode: multiply; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+@import 'src/styles.scss';
 
-    ::ng-deep {
-        h4 {
-            font-size: 48px;
+.follow {
+    background: linear-gradient(76deg, #0F4756, #010101, #000207, #110E1D);
+
+    .follow__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .follow__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .follow__block--two {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .follow__title {
+            width: 400px;
+            color: $color-2;
+            font-size: $font-h-2;
             font-weight: 600;
             line-height: 57px;
-            letter-spacing: 0em;
-            text-align: center;
-            color: #fff;
         }
 
-        p {
-            color: #fff;
+        h2 span {
+            color: $color-warning;
+            font-size: $font-h-1;
         }
-    }
 
-    .btn-contact{
-        background: #F72585;
-        border-radius: 30px;
-        width: 313px;
-        color: #fff;
+        .follow__message {
+            color: $color-2;
+            line-height: 32px;
+            width: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-2;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .follow__link--button {
+            text-decoration: none;
+            background: $color-success;
+            border-radius: 0.438rem 0 0.438rem 0.438rem;
+            padding: 4px;
+            transition: all $animation ease;
+            width: 302px;
+            height: 40px;
+
+            &:hover {
+                background-color: $color-2;
+                color: $color-1;
+            }
+        }
     }
 }

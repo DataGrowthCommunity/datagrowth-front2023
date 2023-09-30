@@ -1,22 +1,29 @@
 @import 'src/styles.scss';
 
 .banner {
-    background: -webkit-linear-gradient(45deg, $color-1, $color-success, $color-input-p);
-    width: 100%;
+    // background: -webkit-linear-gradient(45deg, #10323F, #131123, $color-input-p);
+    // background: url(/assets/images/banner.png), linear-gradient(67deg, #0f3642, #010101, #000207, rgba(0, 2, 8, 0.2509803922));
+    background: url(/assets/images/banner.png), linear-gradient(54deg, rgb(0 153 153 / 30%), #0f3642, #131525a8, rgba(0, 2, 8, 0.2));
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 734px;
 
     .banner__container {
 
         .banner__block {
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding: 10% 15%;
 
-            h1.banner__title {
+            .banner__title {
                 color: $color-2;
                 font-size: $font-h-1;
                 font-weight: 600;
             }
 
+<<<<<<< HEAD
             p {
                 color: $color-2;
                 font-size: 22px;
@@ -24,26 +31,68 @@
                 line-height: 26px;
                 letter-spacing: 0em;
                 text-align: left;
+=======
+            h1 span {
+                color: $color-warning;
+>>>>>>> feature/dgc-xiomi-new
             }
 
+            .banner__object {
+                color: $color-2;
+                width: 439px;
+            }
+            
             a {
                 text-decoration: none;
-                color: $color-2;
+                color: $color-input-p-2;
                 font-size: 22px;
                 font-weight: 400;
+<<<<<<< HEAD
                 text-align: left;
+=======
+                text-align: center;
             }
 
-            .banner__menu-link--button {
+            img {
+                width: 100%;
+>>>>>>> feature/dgc-xiomi-new
+            }
+
+            .banner__link--button {
                 background: $color-success;
-                border: 2px solid $color-success;
-                border-radius: $border-radius-button-1;
-                padding: 11px 26px 11px 26px;
+                border-radius: $border-radius-button-2 0 $border-radius-button-2 $border-radius-button-2;
+                padding: 4px;
                 transition: all $animation ease;
+                width: 302px;
+                height: 40px;
 
                 &:hover {
                     background-color: $color-2;
                     color: $color-1;
+                }
+            }
+
+            @media(max-width: 768px) {
+                h1.banner__title {
+                  font-size: 55px;
+                  margin-bottom: 1rem;
+                }
+                p.banner__object {
+                  font-size: 18px;
+                }
+                a {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            @media(max-width: 576px) {
+                h1.banner__title {
+                  font-size: 40px;
+                  margin-bottom: 0.80rem;
+                }
+                a {
+                    font-size: 16px;
                 }
             }
         }

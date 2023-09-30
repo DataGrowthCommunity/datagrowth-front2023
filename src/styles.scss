@@ -4,19 +4,23 @@
   font-family: 'Rubik', sans-serif;
   src: url(./assets/fonts/Rubik-Regular.ttf);
 }
-/* Importing Bootstrap SCSS file. */
-// @import 'bootstrap/scss/bootstrap';
 
 $color-1: #FFFFFF;
 $color-2: #FFD60A;
 $color-3: #00CED8;
 $color-4: #F72585;
 $color-success: #009999;
+$color-warning: #FFD60A;
 $color-error: #C31313;
 $color-back-1: #141021;
 $color-back-2: #00CED8;
 $color-back-3: rgba(58, 56, 66, 0.96);
 $color-back-4: rgba(58, 56, 66, 1);
+$color-back-5: #0F3642;
+$color-back-6: #010101;
+$color-back-7: #000207;
+$color-back-8: #141021;
+$color-back-9: #74747466;
 $color-input: #10103D;
 $color-input-p: #8C9FC6;
 $color-input-p-2: #141021;
@@ -45,13 +49,13 @@ html, body {
 }
 
 h1 {
-  $font-h-1: 70px;
+  font-size: $font-h-1;
 }
 h2 {
-  $font-h-2: 48px;
+  font-size: $font-h-2;
 }
 h3 {
-  $font-h-3: 30px;
+  font-size: $font-h-3;
 }
 h1, h2, h3, p, a {
   letter-spacing: 1px;
