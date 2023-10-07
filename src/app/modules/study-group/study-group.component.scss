@@ -1,0 +1,40 @@
+.general__back {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .elipse__three {
+    position: absolute;
+    width: 800px;
+    height: 900px;
+    background: radial-gradient(400px 450px, #00999948, #14102105);
+    left: 0;
+    transform: translate(-20rem, 50rem);
+    @media(max-width: 1200px) {
+      transform: translate(-20rem, 50rem);
+    }
+    @media(max-width: 768px) {
+      transform: translate(-20rem, 80rem);
+    }
+  }
+  .elipse__four {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(400px 400px, #f7258449, #14102105);
+    right: 0;
+    transform: translate(26rem, 55rem);
+    @media(max-width: 1200px) {
+      transform: translate(28rem, 65rem);
+    }
+    @media(max-width: 768px) {
+      width: 900px;
+      height:800px;
+      background: radial-gradient(450px 450px, #f7258449, #14102105);
+      transform: translate(33rem, 100rem);
+    }
+  }
+  .general-container {
+    z-index: 2;
+  }
+}
+

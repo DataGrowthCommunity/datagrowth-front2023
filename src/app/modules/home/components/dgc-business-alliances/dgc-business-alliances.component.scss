@@ -1,0 +1,96 @@
+@import 'src/styles.scss';
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(20, 16, 33, 0.137) 0%, rgba(255,255,255,0) 68%);
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 4))}
+}
+
+.business {
+  width: 100%;
+  position: relative;
+  .business__content {
+    position: inherit;
+    z-index: 5;
+    .title__brands {
+        width: 100%;
+        padding: 1.2rem;
+        .titleText {
+            color: $color-1;
+            font-weight: 600;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            .color__des {
+              color: $color-2;
+              font-size:larger;
+            }
+        }
+        @media(max-width: 768px) {
+          .titleText {
+            font-size: 28px;
+          }
+        }
+    }
+
+    // Styling
+    .slider {
+      background: transparent;
+      height: 100px;
+      margin: auto;
+      overflow:hidden;
+      position: relative;
+      width: 100%;
+
+      &::before,
+      &::after {
+        @include white-gradient;
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+      }
+
+      &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+
+      &::before {
+        left: 0;
+        top: 0;
+      }
+
+      .slide__track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(10px);
+      }
+
+      .slide {
+        padding: 0px 2rem;
+        object-fit: cover;
+      }
+    }
+
+    @media (max-width: 768px) {
+        .title__brands {
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .slider {
+            &::before,
+            &::after {
+                width: 50px;
+            }
+        }
+    }
+  }
+}

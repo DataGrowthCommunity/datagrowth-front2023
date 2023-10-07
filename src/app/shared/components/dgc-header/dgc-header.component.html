@@ -1,11 +1,11 @@
 <header class="header">
   <nav class="header__nav">
-    <ul class="d-none d-lg-flex header__menu">
+    <ul class="d-none d-xl-flex header__menu">
       <li class="header__menu-item">
-          <a [routerLink]="['/grupo-estudio']" class="header__menu-link"><img src="/assets/images/capacitaciones.png" alt="icon-capacitaciones"> Capacitaciones</a>
+          <a [routerLink]="['/grupo-estudio']" class="header__menu-link"><img src="/assets/images/capacitaciones.png" alt="icon-capacitaciones"> <span> Capacitaciones</span></a>
       </li>
       <li class="header__menu-item">
-          <a [routerLink]="['/eventos']" class="header__menu-link"><img src="/assets/images/calendar.png" alt="icon-eventos"> Eventos</a>
+          <a [routerLink]="['/eventos']" class="header__menu-link"><img src="/assets/images/calendar.png" alt="icon-eventos"> <span>Eventos</span></a>
       </li>
     </ul>
     <ul [routerLink]="['/']" class="header__logo">
@@ -21,15 +21,15 @@
         </svg>
       </li>
     </ul>
-    <ul class="d-none d-lg-flex header__menu">
+    <ul class="d-none d-xl-flex header__menu">
       <li class="header__menu-item">
-        <a [routerLink]="['/blog']" class="header__menu-link"><img src="/assets/images/document-text.png" alt="icon-blog"> Blog</a>
+        <a [routerLink]="['/blog']" class="header__menu-link"><img src="/assets/images/document-text.png" alt="icon-blog"> <span>Blog</span> </a>
       </li>
       <li class="header__menu-item">
-        <a href="https://chat.whatsapp.com/E5bR74zaC4h94eOGZjswCp" target="_blank"  class="header__menu-link"><img src="/assets/images/chat.png" alt="icon-chat"> Ir a la comunidad</a>
+        <a href="https://chat.whatsapp.com/E5bR74zaC4h94eOGZjswCp" target="_blank"  class="header__menu-link"><img src="/assets/images/chat.png" alt="icon-chat"> <span> Ir a la comunidad</span> </a>
       </li>
     </ul>
-    <ul class="d-lg-none d-flex header__menu">
+    <ul class="d-xl-none d-flex header__menu">
       <li class="mx-0 header__menu-item">
         <button type="button" (click)="openEnd(content)" class="header__menu-item--menuBar">
           <img src="/assets/images/bar-menu.png" alt="bar-menu">
