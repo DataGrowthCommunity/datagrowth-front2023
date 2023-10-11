@@ -2,16 +2,26 @@
     <div class="follow__container">
         <div class="col-12 col-md-6">
             <div class="follow__block">
-                <img class="banner__image" src="/assets/images/chat.png" alt="">
+                <img class="banner__image" src="/assets/images/image-whatsapp.png" alt="">
             </div>
-        </div> 
+        </div>
 
         <div class="col-12 col-md-6">
             <div class="follow__block--two">
                 <h2 class="follow__title">&Uacute;nete a la <span>comunidad</span></h2>
-                <p class="follow__message">S&eacute; parte de nuestra comunidad en WhatsApp encontrar&aacute;s ofertas laborales, eventos y capacitaciones de profesionales destacados.</p>
-                <a [routerLink]="['/grupo-estudio']" target="_blank" class="text-center follow__link follow__link--button">Ir a la comunidad</a>
+                <p class="follow__message">S&eacute; parte de nuestra comunidad en WhatsApp encontrar&aacute;s ofertas
+                    laborales, eventos y capacitaciones de profesionales destacados.</p>
+   
+                <div class="follow__link">
+                    <div class="follow__link--content">
+                        <div class="border-section"></div>
+                        <a [routerLink]="['/grupo-estudio']" target="_blank">
+                            <img src="/assets/images/chat-2.png" alt="comunidad-link"> Ir a la comunidad
+                        </a>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
