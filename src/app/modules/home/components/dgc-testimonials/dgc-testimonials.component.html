@@ -1,66 +1,52 @@
 <section class="testimonial">
   <div class="testimonial__container">
-    <div class="row m-0 ">
+    <div class="row justify-content-center m-0 ">
       <div class="col-12 col-md-9 testimonial__header">
         <h2 class="text-center">Lo que nuestros <span>estudiantes</span> opinan</h2>
       </div>
     </div>
 
-    <div class="row m-0 testimonial__blocks">
-      <div class="col mb-2 testimonial__blocks--cards">
-        <p class="testimonial__blocks__message">Quiero agradecer a Data Growth Community por brindarme esta oportunidad de
-          aprendizaje y desarrollo. Su compromiso con la educaci&oacute;n en ciencia de datos y big data ha sido
-          invaluable...</p>
-        <h5 class="testimonial__blocks__name">Telma Ramos</h5>
-        <span class="testimonial__groupStudy">Bootcamp Data Analytics with Python</span>
-        <a href="https://www.linkedin.com/company/datagrowthcommunity/" class="testimonial__link"
-          target="_blank">LinkedIn</a>
-        <img class="testimonial__photo card-img-top"
-          src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303"
-          alt="">
-      </div>
-      <div class="col mb-2 testimonial__blocks--cards">
-        <p class="testimonial__blocks__message">Quiero agradecer al grupo de estudios Data Growth Community por la constancia
-          recibida y también agradezco el esfuerzo de lo mentores que estan ahí preparándonos material y cosas nuevas
-          para aprender del mundo de los Datos.</p>
-        <h5 class="testimonial__blocks__name">Luis Bonifas</h5>
-        <span class="testimonial__groupStudy">Grupo de Estudio Big Data y Analytics</span>
-        <a href="https://www.linkedin.com/company/datagrowthcommunity/" class="testimonial__link"
-          target="_blank">LinkedIn</a>
-        <img class="testimonial__photo card-img-top"
-          src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
-          alt="">
-      </div>
-      <div class="col mb-2 testimonial__blocks--cards">
-        <p class="testimonial__blocks__message">Quiero agradecer a Data Growth Community por brindarme esta oportunidad de
-          aprendizaje y desarrollo. Su compromiso con la educaci&oacute;n en ciencia de datos y big data ha sido
-          invaluable...</p>
-        <h5 class="testimonial__blocks__name">Jesus Acuña</h5>
-        <span class="testimonial__groupStudy">Grupo de Estudio Big Data y Analytics</span>
-        <a href="https://www.linkedin.com/company/datagrowthcommunity/" class="testimonial__link"
-          target="_blank">LinkedIn</a>
-        <img class="testimonial__photo card-img-top"
-          src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
-          alt="">
-      </div>
-      <div class="col mb-2 testimonial__blocks--cards">
-        <p class="testimonial__blocks__message">Les comparto mi certificación del Bootcamp de Data Analytics con DGC, gracias a
-          esta comunidad por brindarme la oportunidad de aprender y compartir mis conocimientos, de dar un paso más
-          hacia este proyecto de ser Analista de datos.</p>
-        <h5 class="testimonial__blocks__name">Juana Duran</h5>
-        <span class="testimonial__groupStudy"> Grupo de Estudio Big Data y Analytics </span>
-        <a href="https://www.linkedin.com/company/datagrowthcommunity/" class="testimonial__link"
-          target="_blank">LinkedIn</a>
-        <img class="testimonial__photo card-img-top"
-          src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303"
-          alt="">
-      </div>
+    <div class="testimonial__blocks">
+
+
+            <ngx-slick-carousel class="carousel arrow_middle"
+                                #slickModal="slick-carousel"
+                                [config]="slideConfig">
+
+              <div ngxSlickItem *ngFor="let slide of slides" class="singles_items">
+
+                <div class="mb-2 card testimonial__blocks--cards">
+                  <p class="testimonial__blocks__message">{{ slide.text }}</p>
+
+                  <h5 class="testimonial__blocks__name">
+                    <img [src]="slide.imagePais" alt="bandera-{{ slide.pais }}"> {{ slide.name }}
+                  </h5>
+                  <span class="testimonial__groupStudy">{{ slide.job }}</span>
+                  <a [href]="slide.link" class="testimonial__link"
+                    target="_blank">LinkedIn</a>
+                  <img class="testimonial__photo card-img-top"
+                    [src]="slide.photo"
+                    [alt]="slide.name">
+                </div>
+
+              </div>
+
+            </ngx-slick-carousel>
+
+
+
+
     </div>
 
-    <div class="row m-0 testimonial__footer">
-      <div class="col-12 col-md-9">
-        <a [routerLink]="['/grupo-estudio']" target="_blank"
-          class="testimonial__link testimonial__link--button">Aprende ahora</a>
+    <div class="testimonial__link--block">
+      <div class="testimonial__link--content">
+        <div class="border-section"></div>
+        <a [routerLink]="['/grupo-estudio']">
+          <svg width="27" class="mx-2" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.5811 15.1409L25.5811 8.47428L13.5811 1.80762L1.58105 8.47428L13.5811 15.1409ZM13.5811 15.1409L21.7944 10.5783C22.8751 13.3224 23.1818 16.3105 22.6811 19.2169C19.2991 19.5452 16.1107 20.9458 13.5811 23.2143C11.0518 20.946 7.86383 19.5455 4.48239 19.2169C3.98132 16.3105 4.28803 13.3223 5.36905 10.5783L13.5811 15.1409ZM8.24772 23.1409V13.1409L13.5811 10.1783" stroke="#141222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+            Aprende ahora
+        </a>
       </div>
     </div>
   </div>

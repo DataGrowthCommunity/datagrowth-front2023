@@ -10,6 +10,8 @@ import { DgcTestimonialsComponent } from './components/dgc-testimonials/dgc-test
 import { DgcProfessionalImpactComponent } from './components/dgc-professional-impact/dgc-professional-impact.component';
 import { DgcFollowUsComponent } from './components/dgc-follow-us/dgc-follow-us.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel'
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -23,7 +25,8 @@ import { DgcFollowUsComponent } from './components/dgc-follow-us/dgc-follow-us.c
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    NgbModule
+    NgbModule,
+    SlickCarouselModule
   ]
 })
 export class HomeModule { }
