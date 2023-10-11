@@ -18,20 +18,23 @@
         }
 
         h2 {
-            color: $color-2;
+            color: $color-1;
             font-size: $font-h-2;
-            font-weight: 500;
+            font-weight: 600;
             text-align: center;
             line-height: 57px;
         }
 
         h2 span {
-            color: $color-back-2;
+            color: $color-4;
             font-size: $font-h-1;
         }
 
         p {
-            color: $color-2;
+            color: $color-1;
+        }
+
+        .professionalImpact__description {
             font-size: 22px;
             font-weight: 400;
             line-height: 26px;
@@ -43,18 +46,28 @@
 
 .professionalImpact__blocks {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 45px;
+    background: $color-back-9;
+    border-radius: $border-radius-card-1;
+    box-shadow: $shadow;
 
     .professionalImpact__block {
-        width: 173px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
-        background: $color-back-8;
-        border-radius: $border-radius-card-1;
-        box-shadow: $shadow;
         padding: 1rem;
     }
+
+    .profesionalImpact__percentage {
+        font-size: $font-p-5;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .profesionalImpact_desc {
+        color: $color-3;
+    }
+
 }
