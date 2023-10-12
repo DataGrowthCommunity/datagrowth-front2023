@@ -2,9 +2,11 @@
 
 .footer {
   width: 100%;
+  position: relative;
   .footer__container {
+    position: inherit;
+    z-index: 5;
     min-height: 110px;
-    padding: 2rem;
     .footer__block {
       display: flex;
       flex-direction: column;
@@ -35,4 +37,12 @@
     color: $color-1;
     font-size: 15px;
   }
+
+  @media(max-width: 768px) {
+    a {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }
+
 }

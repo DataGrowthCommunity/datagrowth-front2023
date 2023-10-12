@@ -1,33 +1,33 @@
 @import 'src/styles.scss';
 
 .professionalImpact {
-    background: radial-gradient(circle at bottom left, #0F4756, #010101, #000207, #110E1D);
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-
+    position: relative;
     .professionalImpact__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        position: inherit;
+        z-index: 5;
         .professionalImpact__header {
-            width: 940px;
             margin-bottom: 1rem;
         }
 
         h2 {
             color: $color-1;
-            font-size: $font-h-2;
             font-weight: 600;
             text-align: center;
-            line-height: 57px;
+            margin-bottom: 1.5rem;
+
         }
 
-        h2 span {
+        h2 {
+          span {
+            font-size: larger;
+          }
+          .impact {
             color: $color-4;
-            font-size: $font-h-1;
+          }
+          .professional {
+            color: $color-2;
+          }
         }
 
         p {
@@ -36,21 +36,32 @@
 
         .professionalImpact__description {
             font-size: 22px;
-            font-weight: 400;
-            line-height: 26px;
+            line-height: 1.5;
             text-align: center;
+        }
+
+        @media(max-width: 768px) {
+          .professionalImpact__title {
+            font-size: 28px;
+            line-height: 1;
+          }
+          .professionalImpact__description {
+            font-size: 18px;
+            line-height: 1.2;
+          }
         }
 
     }
 }
 
 .professionalImpact__blocks {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
     background: $color-back-9;
     border-radius: $border-radius-card-1;
     box-shadow: $shadow;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .professionalImpact__block {
         display: flex;
@@ -62,8 +73,28 @@
     .profesionalImpact__percentage {
         font-size: $font-p-5;
         font-weight: 700;
-        line-height: 26px;
         text-align: center;
+        line-height: 0.8;
+        @media(max-width: 768px) {
+          font-size: 60px;
+        }
+
+        @media(max-width: 576px) {
+          font-size: 40px;
+        }
+
+    }
+
+    .profesionalImpact__percentage--text {
+      line-height: 1.3;
+      @media(max-width: 768px) {
+        font-size: 18px;
+      }
+      @media(max-width: 576px) {
+        font-size: 16px;
+        line-height: 1;
+      }
+
     }
 
     .profesionalImpact_desc {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'dgc-information-community',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./dgc-information-community.component.scss']
 })
 export class DgcInformationCommunityComponent {
+
+  button = false;
+
+  constructor(public router: Router) {
+    if(this.router.url === '/') {
+      this.button = false;
+    } else {
+      this.button = true;
+    }
+
+  }
+
 
 }

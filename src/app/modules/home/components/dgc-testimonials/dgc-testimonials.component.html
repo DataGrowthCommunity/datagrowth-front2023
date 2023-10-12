@@ -7,35 +7,29 @@
     </div>
 
     <div class="testimonial__blocks">
+        <ngx-slick-carousel class="carousel arrow_middle"
+                            #slickModal="slick-carousel"
+                            [config]="slideConfig">
 
+          <div ngxSlickItem *ngFor="let slide of slides" class="singles_items">
 
-            <ngx-slick-carousel class="carousel arrow_middle"
-                                #slickModal="slick-carousel"
-                                [config]="slideConfig">
+            <div class="mb-2 card testimonial__blocks--cards">
+              <p class="testimonial__blocks__message">{{ slide.text }}</p>
 
-              <div ngxSlickItem *ngFor="let slide of slides" class="singles_items">
+              <h5 class="testimonial__blocks__name">
+                <img [src]="slide.imagePais" alt="bandera-{{ slide.pais }}"> {{ slide.name }}
+              </h5>
+              <span class="testimonial__groupStudy">{{ slide.job }}</span>
+              <a [href]="slide.link" class="testimonial__link"
+                target="_blank">LinkedIn</a>
+              <img class="testimonial__photo card-img-top"
+                [src]="slide.photo"
+                [alt]="slide.name">
+            </div>
 
-                <div class="mb-2 card testimonial__blocks--cards">
-                  <p class="testimonial__blocks__message">{{ slide.text }}</p>
+          </div>
 
-                  <h5 class="testimonial__blocks__name">
-                    <img [src]="slide.imagePais" alt="bandera-{{ slide.pais }}"> {{ slide.name }}
-                  </h5>
-                  <span class="testimonial__groupStudy">{{ slide.job }}</span>
-                  <a [href]="slide.link" class="testimonial__link"
-                    target="_blank">LinkedIn</a>
-                  <img class="testimonial__photo card-img-top"
-                    [src]="slide.photo"
-                    [alt]="slide.name">
-                </div>
-
-              </div>
-
-            </ngx-slick-carousel>
-
-
-
-
+        </ngx-slick-carousel>
     </div>
 
     <div class="testimonial__link--block">

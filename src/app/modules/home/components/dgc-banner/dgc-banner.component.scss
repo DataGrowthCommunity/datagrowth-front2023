@@ -76,8 +76,8 @@
         background: radial-gradient(400px 400px, #00999959, #14102105);
         transform: translate(-18rem, 110rem);
       }
-      @media(max-width: 400px) {
-        transform: translate(-18rem, 125rem);
+      @media(max-width: 576px) {
+        transform: translate(-18rem, 130rem);
       }
     }
     .elipse__four {
@@ -85,11 +85,11 @@
       width: 900px;
       height: 900px;
       z-index: 4;
-      background: radial-gradient(450px 400px, #00999988, #14102105);
+      background: radial-gradient(400px 400px, #f7258449, #14102105);
       right: 0;
-      transform: translate(12rem, 122rem);
+      transform: translate(16rem, 122rem);
       @media(max-width: 1200px) {
-        transform: translate(10rem, 130rem);
+        transform: translate(18rem, 130rem);
       }
       @media(max-width: 992px) {
         transform: translate(22rem, 145rem);
@@ -97,13 +97,42 @@
       @media(max-width: 768px) {
         width: 800px;
         height: 800px;
-        background: radial-gradient(400px 400px, #00999959, #14102105);
+        background: radial-gradient(400px 400px, #f7258449, #14102105);
         transform: translate(20rem, 130rem);
       }
-      @media(max-width: 400px) {
-        transform: translate(22rem, 140rem);
+      @media(max-width: 576px) {
+        transform: translate(22rem, 150rem);
       }
     }
+    .elipse__five {
+      position: absolute;
+      width: 900px;
+      height: 900px;
+      z-index: 4;
+      background: radial-gradient(450px 450px, #00999965, #14102105);
+      right: 0;
+      transform: translate(-27rem, 148rem);
+      @media(max-width: 1400px) {
+        transform: translate(-22rem, 148rem);
+      }
+      @media(max-width: 1200px) {
+        transform: translate(-14rem, 150rem);
+      }
+      @media(max-width: 992px) {
+        background: radial-gradient(300px 300px, #00999965, #14102105);
+        transform: translate(-9rem, 177rem);
+      }
+      @media(max-width: 768px) {
+        width: 900px;
+        height: 900px;
+        background: radial-gradient(500px 500px, #00999965, #14102105);
+        transform: translate(0rem, 160rem);
+      }
+      @media(max-width: 576px) {
+        transform: translate(-8rem, 160rem);
+      }
+    }
+
     .banner__container {
 
         .banner__block {
