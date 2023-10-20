@@ -3,6 +3,7 @@
 .footer {
   width: 100%;
   position: relative;
+  margin: 2rem 0 0 0;
   .footer__container {
     position: inherit;
     z-index: 5;
@@ -26,6 +27,9 @@
           margin: 10px;
         }
       }
+    }
+    .footer__block--start, .footer__block--end {
+      align-items: center;
     }
   }
   .footer__copyright {

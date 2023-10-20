@@ -69,8 +69,7 @@
             padding: 5px 15px;
 
             &:hover {
-              background: $color-1;
-              color: $color-back-1;
+              border: 2px solid $color-1;
             }
           }
 
@@ -86,12 +85,6 @@
             border-top: none;
             border-left: none;
             transition: all .4s ease;
-          }
-
-          &:hover {
-            .border-section {
-              opacity: 1;
-            }
           }
 
           .active + .border-section {
@@ -150,7 +143,7 @@
             font-size: 25px;
             max-width: fit-content;
             padding: 8px 0;
-            border-bottom: 8px solid #f72585;
+            border-bottom: 3px solid $color-1;
             margin-bottom: 20px;
             margin-left: 30px;
           }

@@ -12,8 +12,8 @@ export class DgcTestimonialsComponent {
      text: 'Extiendo mi sincero agradecimiento a Data Growth Community y a los destacados mentores del Bootcamp. Su orientación me ha permitido transformar un cúmulo de datos en un camino de conocimientos valiosos y convertir desafíos...',
      name: 'Telma Ramos',
      job: 'Bootcamp Data Analytics with Python',
-     pais: 'Perú',
-     imagePais: '/assets/images/Bandera_Peru.png',
+     pais: 'Bolivia',
+     imagePais: '/assets/images/Bandera_Bolivia.png',
      link: 'https://www.linkedin.com/posts/telma-ramos-thompson-10835b132_datascience-anaerlisisdedatos-activity-7091978337962577920-qkRw?utm_source=share&utm_medium=member_desktop',
      photo: '/assets/images/Testimonio_Telma_Ramos.jpg'
     },
@@ -21,8 +21,8 @@ export class DgcTestimonialsComponent {
       text: 'La ciencia de datos es un campo que me apasiona mucho por el valor que genera su correcta aplicación. Estoy muy agradecido con la dedicación y compromiso puesto en este Bootcamp Data Analytics with Python impartido por Data Growth.',
       name: 'Pedro Baca',
       job: 'Bootcamp Data Analytics with Python',
-      pais: 'Bolivia',
-      imagePais: '/assets/images/Bandera_Bolivia.png',
+      pais: 'Peru',
+      imagePais: '/assets/images/Bandera_Peru.png',
       link: 'https://www.linkedin.com/posts/pedrosebastianbacacisneros_bootcamp-data-analytics-with-python-activity-7092573605368078336-8iwM?utm_source=share&utm_medium=member_desktop',
       photo: '/assets/images/Testimonio_Pedro_Baca.jpg'
     },
@@ -39,8 +39,8 @@ export class DgcTestimonialsComponent {
       text: 'Les comparto mi certificación del Bootcamp de Data Analytics con DGC, gracias a esta comunidad por brindarme la oportunidad de aprender y compartir mis conocimientos, de dar un paso más hacia este proyecto de ser Analista de datos.',
       name: 'Jhonatan Duran',
       job: 'Bootcamp Data Analytics with Python',
-      pais: 'Perú',
-      imagePais: '/assets/images/Bandera_Peru.png',
+      pais: 'Colombia',
+      imagePais: '/assets/images/Bandera_Colombia.png',
       link: 'https://www.linkedin.com/company/datagrowthcommunity/',
       photo: '/assets/images/Testimonio_Jhonatan_Duran.jpg'
     },
@@ -48,8 +48,8 @@ export class DgcTestimonialsComponent {
       text: 'Quiero agradecer a Data Growth Community por brindarme esta oportunidad de aprendizaje y desarrollo. Su compromiso con la educación en ciencia de datos y big data ha sido invaluable...',
       name: 'Jesus Acuña',
       job: 'Grupo de Estudio Big Data y Analytics',
-      pais: 'Colombia',
-      imagePais: '/assets/images/Bandera_Colombia.png',
+      pais: 'Peru',
+      imagePais: '/assets/images/Bandera_Peru.png',
       link: 'https://www.linkedin.com/company/datagrowthcommunity/',
       photo: '/assets/images/Testimonio_Jesus_Acuña.jpg'
     },
