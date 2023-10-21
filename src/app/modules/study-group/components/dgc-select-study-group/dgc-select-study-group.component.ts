@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScriptsLoadService } from '@core/services/scripts-load.service';
 
 @Component({
   selector: 'dgc-select-study-group',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class DgcSelectStudyGroupComponent {
 
+  constructor(private scriptLoadService: ScriptsLoadService) {
+    this.scriptLoadService.load(['reveal']);
+  }
+  
 }

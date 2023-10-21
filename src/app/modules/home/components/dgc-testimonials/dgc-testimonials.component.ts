@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScriptsLoadService } from '@core/services/scripts-load.service';
 
 @Component({
   selector: 'dgc-testimonials',
@@ -133,5 +134,9 @@ export class DgcTestimonialsComponent {
         }
       ]
   };
+
+  constructor(private scriptLoadService: ScriptsLoadService) {
+    this.scriptLoadService.load(['reveal']);
+  }
 
 }

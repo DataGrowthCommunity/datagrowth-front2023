@@ -1,12 +1,12 @@
 <section class="testimonial">
-  <div class="testimonial__container">
+  <div class="testimonial__container reveal">
     <div class="row justify-content-center m-0 ">
       <div class="col-12 col-md-9 testimonial__header">
         <h2 class="text-center">Lo que nuestros <span>estudiantes</span> opinan</h2>
       </div>
     </div>
 
-    <div class="testimonial__blocks">
+    <div class="testimonial__blocks reveal fade-right">
         <ngx-slick-carousel class="carousel arrow_middle"
                             #slickModal="slick-carousel"
                             [config]="slideConfig">
@@ -32,7 +32,7 @@
         </ngx-slick-carousel>
     </div>
 
-    <div class="testimonial__link--block">
+    <div class="testimonial__link--block reveal fade-bottom">
       <div class="testimonial__link--content">
         <div class="border-section"></div>
         <a [routerLink]="['/grupo-estudio']">

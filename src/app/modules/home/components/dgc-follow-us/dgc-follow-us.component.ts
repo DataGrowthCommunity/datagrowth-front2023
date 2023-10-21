@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScriptsLoadService } from '@core/services/scripts-load.service';
 
 @Component({
   selector: 'dgc-follow-us',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dgc-follow-us.component.scss']
 })
 export class DgcFollowUsComponent {
+
+  constructor(private scriptLoadService: ScriptsLoadService) {
+    this.scriptLoadService.load(['reveal']);
+  }
 
 }

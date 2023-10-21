@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScriptsLoadService } from '@core/services/scripts-load.service';
 
 @Component({
   selector: 'dgc-business-alliances',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class DgcBusinessAlliancesComponent {
 
+  constructor(private scriptLoadService: ScriptsLoadService) {
+    this.scriptLoadService.load(['reveal']);
+  }
+  
 }
