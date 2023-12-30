@@ -14,7 +14,7 @@
   }
   .banner__main {
     position: inherit;
-    background: url(/assets/images/banner.webp);
+    background: url(/assets/images/banner.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@
       background: linear-gradient(180deg, rgba(20, 16, 33, 0.897) 42%, rgba(255,255,255,0) 78%);
     }
     .banner__main {
-      background: url(/assets/images/banner-mobile.webp);
+      background: url(/assets/images/banner-mobile.png);
       background-blend-mode: multiply;
       background-size: cover;
       background-position: center;
@@ -285,7 +285,7 @@
 
     .banner__main {
       position: inherit;
-      background: url(/assets/images/banner-responsive.webp);
+      background: url(/assets/images/banner-responsive.png);
       background-blend-mode: multiply;
       background-size: cover;
       background-position: center;
